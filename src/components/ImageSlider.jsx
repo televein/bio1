@@ -57,12 +57,7 @@ const ImageSlider = ({slides , parentWidth}) => {
     setcurrentIndex(newIndex);
   },[currentIndex,slides]);
 
-  const dotsContainerStyles = {
-    display: 'flex',
-    justifyContent: 'center',
-    // zIndex:1,
-    
-  };
+ 
 
   // const dotStyles1 = {
   //   right: '48%',
@@ -115,9 +110,7 @@ const ImageSlider = ({slides , parentWidth}) => {
     
   // };
 
-  const gotoSlide = slideIndex => {
-    setcurrentIndex(slideIndex);
-  };
+
 
   const getSlidesStyleWidthBackground = (slideIndex) => ({
     ...slideStyles,

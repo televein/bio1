@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState ,useCallback } from 'react';
 import {AiOutlineCheck} from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom';
 
@@ -65,50 +65,61 @@ const CakeOrderForm = () => {
   };
   
   
-    const sendEmail = async () => {
-      if((emailData.selectedWeight !== null)&&(emailData.selectedLayer!== null)&&(emailData.selectedTheme!== null)&&(emailData.selectedFlavor!== null)&&(emailData.description!== null)&&(emailData.deliveryDate!== null)&&(emailData.fullName!== null)&&(emailData.address!== null)&&(emailData.phoneNumber!== null)&&(emailData.city!== null)){
-                try {
-          // const response = await fetch('http://localhost:3002/send-email', {
-          const response = await fetch('https://server-aimq.onrender.com/send-email', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(emailData),
-          });
-          console.log("4");
-          if (response.ok) {
-            setOrderPlaced(true);
-            setTimeout(() => {
-              setOrderPlaced(false);
-              navigate('/');
-            }, 1500);
-            console.log('Email sent successfully!');
-            console.log(selectedLayer);
-          } else {
-            console.error('Failed to send email.');
-           
-          }
-        } catch (error) {
-          console.error('Error sending email:', error);
+  const sendEmail = useCallback(async () => {
+    if (
+      (emailData.selectedWeight !== null) &&
+      (emailData.selectedLayer !== null) &&
+      (emailData.selectedTheme !== null) &&
+      (emailData.selectedFlavor !== null) &&
+      (emailData.description !== null) &&
+      (emailData.deliveryDate !== null) &&
+      (emailData.fullName !== null) &&
+      (emailData.address !== null) &&
+      (emailData.phoneNumber !== null) &&
+      (emailData.city !== null)
+    ) {
+      try {
+        // const response = await fetch('http://localhost:3002/send-email', {
+        const response = await fetch('https://server-aimq.onrender.com/send-email', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(emailData),
+        });
+
+        if (response.ok) {
+          setOrderPlaced(true);
+          setTimeout(() => {
+            setOrderPlaced(false);
+            navigate('/');
+          }, 1500);
+          console.log('Email sent successfully!');
+          console.log(selectedLayer);
+        } else {
+          console.error('Failed to send email.');
         }
+      } catch (error) {
+        console.error('Error sending email:', error);
       }
-      else{
-        setWrong(true);
-        setTimeout(() => {
-          setWrong(false);
-          // navigate('/');
-        }, 1500);
-      }
+    } else {
+      setWrong(true);
+      setTimeout(() => {
+        setWrong(false);
+        // navigate('/');
+      }, 1500);
     }
+  }, [emailData, setOrderPlaced, navigate, setWrong, selectedLayer]);
 
   useEffect(() => {
     // This will run after aim has been updated to "bye"
     sendEmail();
-  }, [emailData]);
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  }, [sendEmail]); // Add sendEmail to the dependency array
+    
+    useEffect(() => {
+      // This will run once when the component mounts
+      window.scrollTo(0, 0);
+    }, []);
 
   return (
     <div className="container mt-24 lg:mt-6 mx-auto p-5 ">

@@ -4,7 +4,6 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Order from './components/Order';
-import ImageSlider from './components/ImageSlider';
 import Home from './scenes/Home';
 import Menu from './scenes/Menu';
 import Search from './scenes/Search';
