@@ -415,22 +415,22 @@ export const food = [
       'https://cakeimages.netlify.app/51.jpg',
     // price: '45.70'
   },
-  // {
-  //   id: 52,
-  //   name: 'Chocolaty Brownies',
-  //   category: 'Double chocolate brownies',
-  //   image:
-  //     'https://cakeimages.netlify.app/51.jpg',
-  //   // price: '45.70'
-  // },
-  // {
-  //   id: 53,
-  //   name: 'Chocolaty Brownies',
-  //   category: 'Double chocolate brownies',
-  //   image:
-  //     'https://cakeimages.netlify.app/51.jpg',
-  //   // price: '45.70'
-  // },
+  {
+    id: 52,
+    name: 'Chocolaty Brownies',
+    category: 'Double chocolate brownies',
+    image:
+      'https://cakeimages.netlify.app/52.jpg',
+    // price: '45.70'
+  },
+  {
+    id: 53,
+    name: 'Chocolaty Brownies',
+    category: 'Double chocolate brownies',
+    image:
+      'https://cakeimages.netlify.app/53.jpg',
+    // price: '45.70'
+  },
 
   
 ];
