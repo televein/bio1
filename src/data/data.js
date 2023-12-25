@@ -423,14 +423,14 @@ export const food = [
       'https://cakeimages.netlify.app/52.jpg',
     // price: '45.70'
   },
-  {
-    id: 53,
-    name: 'Chocolaty Brownies',
-    category: 'double chocolate brownies',
-    image:
-      'https://cakeimages.netlify.app/53.jpg',
-    // price: '45.70'
-  },
+  // {
+  //   id: 53,
+  //   name: 'Chocolaty Brownies',
+  //   category: 'double chocolate brownies',
+  //   image:
+  //     'https://cakeimages.netlify.app/53.jpg',
+  //   // price: '45.70'
+  // },
 
   
 ];
