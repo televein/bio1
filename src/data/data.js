@@ -418,7 +418,7 @@ export const food = [
   {
     id: 52,
     name: 'Chocolaty Brownies',
-    category: 'Double chocolate brownies',
+    category: 'double chocolate brownies',
     image:
       'https://cakeimages.netlify.app/52.jpg',
     // price: '45.70'
@@ -426,7 +426,7 @@ export const food = [
   {
     id: 53,
     name: 'Chocolaty Brownies',
-    category: 'Double chocolate brownies',
+    category: 'double chocolate brownies',
     image:
       'https://cakeimages.netlify.app/53.jpg',
     // price: '45.70'
