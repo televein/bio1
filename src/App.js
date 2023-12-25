@@ -2,7 +2,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+//import Footer from './components/Footer';
 import Order from './components/Order';
 import Home from './scenes/Home';
 import Menu from './scenes/Menu';
@@ -32,7 +32,7 @@ function App() {
       {/* Add the following routes for authentication */}
       <Route path="/order" element={<Order />} />
     </Routes>
-    <Footer />
+  
 </div>
   );
 }
