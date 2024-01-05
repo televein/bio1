@@ -22,14 +22,14 @@ function Footer() {
               accusantium.
             </p>
             <div className="flex justify-between md:w-[75%] my-6">
-              <a href="https://wa.me/234">
+              <a href="https://wa.me/9443512036">
                 {" "}
                 <FaWhatsapp
                   size={30}
                   className="hover:scale-110 duration-300 hover:text-blue-500"
                 />{" "}
               </a>
-              <a href="https://instagram.com/chefkim_">
+              <a href="https://instagram.com/bio_cakes_">
                 {" "}
                 <FaInstagram
                   size={30}
@@ -42,7 +42,7 @@ function Footer() {
                   className="hover:scale-110 duration-300 hover:text-blue-500"
                 />
               </a>
-              <a href="mailto:chefkimkitchenn@gmail.com">
+              <a href="mailto:biocakes@gmail.com">
                 <FiMail
                   size={30}
                   className="hover:scale-110 duration-300 hover:text-blue-500"
