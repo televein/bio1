@@ -19,7 +19,7 @@ function Footer() {
               Biocakes: Elevate your moments with our{" "}
               <span className="text-blue-500">Homemade</span>  delights, blending organic goodness and irresistible flavors. From classic to innovative, indulge in cakes that redefine sweet perfection.
             </p>
-            <div className="flex justify-between md:w-[75%] my-6">
+            <div className="flex justify-around md:w-[75%] my-6">
               <a href="https://wa.me/9443512036">
                 {" "}
                 <FaWhatsapp
