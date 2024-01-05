@@ -49,7 +49,7 @@ function Footer() {
             </div>
             <h3 className="text-sm">Made with Love by Code Uchay</h3>
           </div>
-          <div className="lg:col-span-2 flex justify-between sm:mx-10 lg:mx-14  mt-6">
+          {  /*  <div className="lg:col-span-2 flex justify-between sm:mx-10 lg:mx-14  mt-6"> */}
             <div>
               <h6 className="font-medium text-blue-500">Links</h6>
               <ul>
@@ -65,7 +65,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div>
+            {/* <div>
               <h6 className="font-medium text-blue-500">Support</h6>
               <ul>
                 <li className="py-2 text-sm ">
@@ -78,8 +78,8 @@ function Footer() {
                   Ts&Cs
                 </li>
               </ul>
-            </div>
-          </div>
+            </div> */}
+        
         </div>
       </div>
     </div>
