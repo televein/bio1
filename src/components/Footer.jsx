@@ -16,10 +16,8 @@ function Footer() {
         <div className="max-w-[1240px] mx-auto py-10 px-4 grid lg:grid-cols-3 gap-8">
           <div>
             <p className="py-4">
-              Lorem, ipsum dolor sit amet consectetur{" "}
-              <span className="text-blue-500">Tastyy Restaurant</span> elit. Id odit
-              ullam iste repellat consequatur libero reiciendis, blanditiis
-              accusantium.
+              Biocakes: Elevate your moments with our{" "}
+              <span className="text-blue-500">Homemade</span>  delights, blending organic goodness and irresistible flavors. From classic to innovative, indulge in cakes that redefine sweet perfection.
             </p>
             <div className="flex justify-between md:w-[75%] my-6">
               <a href="https://wa.me/9443512036">
@@ -36,12 +34,12 @@ function Footer() {
                   className="hover:scale-110 duration-300 hover:text-blue-500"
                 />{" "}
               </a>
-              <a href="https://twitter.com/adarhx">
+              {/* <a href="https://twitter.com/adarhx">
                 <FaXTwitter
                   size={30}
                   className="hover:scale-110 duration-300 hover:text-blue-500"
                 />
-              </a>
+              </a> */}
               <a href="mailto:biocakes@gmail.com">
                 <FiMail
                   size={30}
