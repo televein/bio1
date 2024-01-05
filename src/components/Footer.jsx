@@ -1,7 +1,7 @@
 import React from "react";
 import { FaInstagram,  FaWhatsapp } from "react-icons/fa";
 
-import { FaXTwitter } from "react-icons/fa6";
+//import { FaXTwitter } from "react-icons/fa6";
 import { FiMail } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
@@ -34,7 +34,7 @@ function Footer() {
                   className="hover:scale-110 duration-300 hover:text-blue-500"
                 />{" "}
               </a>
-              {/*a <a href="https://twitter.com/adarhx">
+              {/* <a href="https://twitter.com/adarhx">
                 <FaXTwitter
                   size={30}
                   className="hover:scale-110 duration-300 hover:text-blue-500"
