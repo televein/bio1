@@ -34,7 +34,7 @@ function Footer() {
                   className="hover:scale-110 duration-300 hover:text-blue-500"
                 />{" "}
               </a>
-              {/* <a href="https://twitter.com/adarhx">
+              {/*a <a href="https://twitter.com/adarhx">
                 <FaXTwitter
                   size={30}
                   className="hover:scale-110 duration-300 hover:text-blue-500"
