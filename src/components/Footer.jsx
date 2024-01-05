@@ -52,7 +52,7 @@ function Footer() {
           {  /*  <div className="lg:col-span-2 flex justify-between sm:mx-10 lg:mx-14  mt-6"> */}
             <div>
               <h6 className="font-medium text-blue-500">Links</h6>
-              <ul>
+              <ul className=" flex flex-col">
                 <li className="py-2 text-sm hover:text-blue-600 cursor-pointer">
                   {" "}
                   <Link to="/">Home</Link>
