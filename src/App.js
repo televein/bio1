@@ -32,7 +32,7 @@ function App() {
       {/* Add the following routes for authentication */}
       <Route path="/order" element={<Order />} />
     </Routes>
-  
+  <Footer/>
 </div>
   );
 }
