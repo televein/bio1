@@ -19,11 +19,7 @@ function Footer() {
               Biocakes: Elevate your moments with our{" "}
               <span className="text-blue-500">Homemade</span>  delights, blending organic goodness and irresistible flavors. From classic to innovative, indulge in cakes that redefine sweet perfection.
             </p>
-<<<<<<< HEAD
             <div className="flex justify-around md:w-[100%] my-6">
-=======
-            <div className="flex justify-around md:w-[75%] my-6">
->>>>>>> a97c5c2ba99e1264116d28ec6ea7d1ab995996e5
               <a href="https://wa.me/9443512036">
                 {" "}
                 <FaWhatsapp
@@ -54,11 +50,7 @@ function Footer() {
             <h3 className="text-sm">Made with Love by Televein</h3>
           </div>
           {  /*  <div className="lg:col-span-2 flex justify-between sm:mx-10 lg:mx-14  mt-6"> */}
-<<<<<<< HEAD
             {/* <div>
-=======
-            <div>
->>>>>>> a97c5c2ba99e1264116d28ec6ea7d1ab995996e5
               <h6 className="font-medium text-blue-500">Links</h6>
               <ul className=" flex flex-col">
                 <li className="py-2 text-sm hover:text-blue-600 cursor-pointer">
@@ -72,11 +64,7 @@ function Footer() {
                   <Link to="/categories">Categories</Link>
                 </li>
               </ul>
-<<<<<<< HEAD
             </div> */}
-=======
-            </div>
->>>>>>> a97c5c2ba99e1264116d28ec6ea7d1ab995996e5
             {/* <div>
               <h6 className="font-medium text-blue-500">Support</h6>
               <ul>
