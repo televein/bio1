@@ -1,6 +1,8 @@
 import React, { useEffect, useState ,useCallback } from 'react';
 import {AiOutlineCheck} from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom';
+import {   FaWhatsapp } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa6";
 
 const CakeOrderForm = () => {
   const [selectedWeight, setSelectedWeight] = useState(null);
@@ -14,7 +16,8 @@ const CakeOrderForm = () => {
   const [address, setAddress] = useState(null);
   const [phoneNumber, setPhoneNumber] = useState(null);
   const [city,setCity] = useState(null);
-
+const [normal,setNormal]=useState("false");
+const [coustom,setCoustom]=useState("false");
 
   const renderButton = (value, onClick, isSelected) => (
     <button
@@ -129,7 +132,18 @@ const CakeOrderForm = () => {
           Order <span className="text-blue-500">Cake</span>
         </h1>
         <hr />
-      <div className="mb-4">
+        <div className="mb-4">
+        <h2 className="text-2xl font-bold mb-2">Cake Design</h2>
+        <div className="flex flex-col md:flex-row" name="selectedWeight">
+        {renderButton('Normal', () => { setNormal('true'); setCoustom('false'); })}
+        {renderButton('Coustomise', () => { setCoustom('true'); setNormal('false'); })}
+
+
+        </div>
+      </div>
+        {normal === 'true' && (
+          <div>
+              <div className="mb-4">
         <h2 className="text-2xl font-bold mb-2">Cake Weight</h2>
         <div className="flex flex-col md:flex-row" name="selectedWeight">
           {renderButton('500g', () => setSelectedWeight('500g'), selectedWeight === '500g')}
@@ -179,6 +193,7 @@ const CakeOrderForm = () => {
               required
             />
         </div>
+        
       <div className="mb-4">
         <h2 className="text-2xl font-bold mb-2">Cake Description</h2>
         <textarea
@@ -270,6 +285,36 @@ const CakeOrderForm = () => {
               <h1>Fill all the column</h1>
             </div>
           )}
+          </div>
+          )}
+           {coustom === 'true' && (
+                        <div><div>  <h1>Sorry, We don't have any facility to order coustomised cakes in our Website.So,Contact them </h1> </div>
+
+            <div  className="flex justify-around md:w-[100%] my-6">
+            <div>
+              <a href="https://wa.me/9443512036">
+                {" "}
+                <FaWhatsapp
+                  size={150}
+                  className="hover:scale-110 duration-300 hover:text-blue-500"
+                />{" "}
+              </a>
+              </div>
+               <div>
+                <div>
+              <a href="tel:+919443512036">
+               {" "}
+               <FaPhone 
+                size={130}
+                className="hover:scale-110 duration-300 hover:text-blue-500"
+                />{" "}
+</a>
+
+              </div>
+              </div>
+               </div>
+               </div>
+           )}
      </div>
     </div>
   );
