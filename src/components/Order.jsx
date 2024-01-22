@@ -2,7 +2,7 @@ import React, { useEffect, useState ,useCallback } from 'react';
 import {AiOutlineCheck} from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom';
 import {   FaWhatsapp } from "react-icons/fa";
-import { FaPhone } from "react-icons/fa6";
+import { TbPhoneCall } from "react-icons/tb";
 
 const CakeOrderForm = () => {
   const [selectedWeight, setSelectedWeight] = useState(null);
@@ -288,7 +288,7 @@ const [coustom,setCoustom]=useState("false");
           </div>
           )}
            {coustom === 'true' && (
-                        <div><div>  <h1>Sorry, We don't have any facility to order coustomised cakes in our Website.So,Contact them </h1> </div>
+                        <div><div>  <h1>Sorry, We don't have any facility to order coustomised cakes in our Website.So,Contact them. </h1> </div>
 
             <div  className="flex justify-around md:w-[100%] my-6">
             <div>
@@ -304,8 +304,8 @@ const [coustom,setCoustom]=useState("false");
                 <div>
               <a href="tel:+919443512036">
                {" "}
-               <FaPhone 
-                size={130}
+               <TbPhoneCall
+                size={150}
                 className="hover:scale-110 duration-300 hover:text-blue-500"
                 />{" "}
 </a>
