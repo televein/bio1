@@ -6,7 +6,7 @@ import { TbPhoneCall } from "react-icons/tb";
 
 const CakeOrderForm = () => {
   const [selectedWeight, setSelectedWeight] = useState(null);
-  const [selectedLayer, setSelectedLayer] = useState(null);
+  // const [selectedLayer, setSelectedLayer] = useState(null);
   const [selectedTheme, setSelectedTheme] = useState(null);
   const [selectedFlavor, setSelectedFlavor] = useState(null);
   const [description, setDescription] = useState(null);
@@ -35,7 +35,7 @@ const [coustom,setCoustom]=useState("false");
     to: 'televeininfo@gmail.com',
     subject: 'Regarding Your Inquiry',
     selectedWeight,
-    selectedLayer,
+    // selectedLayer,
     selectedTheme,
     selectedFlavor,
     description,
@@ -53,7 +53,7 @@ const [coustom,setCoustom]=useState("false");
       to: 'televeininfo@gmail.com',
       subject: 'Our customer ordered the cake.',
       selectedWeight: selectedWeight,
-      selectedLayer: selectedLayer,
+      // selectedLayer: selectedLayer,
       selectedTheme: selectedTheme,
       selectedFlavor: selectedFlavor,
       description: description,
@@ -99,7 +99,7 @@ const [coustom,setCoustom]=useState("false");
         if (response.ok) {
           
           console.log('Email sent successfully!');
-          console.log(selectedLayer);
+          // console.log(selectedLayer);
         } else {
           console.error('Failed to send email.');
         }
@@ -113,7 +113,9 @@ const [coustom,setCoustom]=useState("false");
         // navigate('/');
       }, 1500);
     }
-  }, [emailData, setOrderPlaced, navigate, setWrong, selectedLayer]);
+  }, [emailData, setOrderPlaced, navigate, setWrong,
+    //  selectedLayer
+    ]);
 
   useEffect(() => {
     // This will run after aim has been updated to "bye"
@@ -268,9 +270,13 @@ const [coustom,setCoustom]=useState("false");
             />
       </div>
      
-        <button  onClick={handleButtonClick} className="bg-blue-400 hover:bg-blue-500 mt-4">
-          Place Order
-        </button>
+      <button
+  onClick={handleButtonClick}
+  className="bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mt-4 transition duration-300 ease-in-out"
+>
+  Place Order
+</button>
+
         {orderPlaced && (
             <div
               className="font-bold flex items-center absolute  bg-green-500 text-white rounded p-2 transition-transform duration-300 animate-bounce"
