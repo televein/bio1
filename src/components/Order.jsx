@@ -152,7 +152,7 @@ const [coustom,setCoustom]=useState("false");
           {renderButton('2000g', () => setSelectedWeight('2000g'), selectedWeight === '2000g')}
         </div>
       </div>
-
+{/* 
       <div className="mb-4">
         <h2 className="text-2xl font-bold mb-2">Cake Layers</h2>
         <div className="flex flex-col md:flex-row">
@@ -160,7 +160,7 @@ const [coustom,setCoustom]=useState("false");
           {renderButton('Double Layer', () => setSelectedLayer('Double Layer'), selectedLayer === 'Double Layer')}
           {renderButton('Triple Layer', () => setSelectedLayer('Triple Layer'), selectedLayer === 'Triple Layer')}
         </div>
-      </div>
+      </div> */}
 
       <div className="mb-4">
         <h2 className="text-2xl font-bold mb-2">Cake Theme</h2>
