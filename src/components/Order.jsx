@@ -294,7 +294,7 @@ const [coustom,setCoustom]=useState("false");
           </div>
           )}
            {coustom === 'true' && (
-                        <div><div>  <h1>Sorry, We don't have any facility to order coustomised cakes in our Website.So,Contact them. </h1> </div>
+                        <div><div>  <h1>Contact them to Order coustomised cakes. </h1> </div>
 
             <div  className="flex justify-around md:w-[100%] my-6">
             <div>
