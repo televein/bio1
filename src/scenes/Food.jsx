@@ -65,7 +65,11 @@ function Food() {
                 <div className="">Category: <span className="text-blue-500">{foods.category}</span> </div>
                 <div>
                 <h2 className=""><u>Description</u></h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni voluptates ea vel officiis minima dolorum quae nostrum culpa? Dolores soluta facere sapiente aliquid, esse at illo temporibus ea quaerat.</p>
+                <p>
+Express your love and warmest wishes to the person celebrating their special day with this delightful and irresistible cake. <br></br>
+ This heart-melting confection is not only delicious but also serves as a symbol of the joy and happiness you wish to bring to their celebration. <br></br> With every bite, may they feel the sweetness of your affection and the sincerity of your best wishes. 
+  Let this cake be a centerpiece of their festivities,<br></br> spreading smiles and creating cherished memories that will last a lifetime. Celebrate with joy!</p>
+
                 </div>
                 {/* <div><b>Price:</b> <span  className="font-semibold">${foods.price}</span></div>
                 <div className="flex flex-row gap-3 justify-start items-center">

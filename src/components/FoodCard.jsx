@@ -1,20 +1,21 @@
 import React from "react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const FoodCard = ({ item }) => {
 
-
-  // const navigate = useNavigate();
-
-
-
   
 
-  return (<a  href={item.image}>
-    
+  const navigate = useNavigate();
 
+
+
+  const handleFoodClick = () => {
+    navigate(`/menu/${item.id}`);
+  };
+
+  return (
     <div
-    
+      onClick={handleFoodClick}
       className="cursor-pointer rounded-2xl shadow-blue-200 hover:shadow-2xl hover:scale-105 duration-500 shadow-lg"
     >
       {/* food container */}
@@ -39,7 +40,6 @@ const FoodCard = ({ item }) => {
 
       </div>
     </div>
-    </a>
   );
 };
 
